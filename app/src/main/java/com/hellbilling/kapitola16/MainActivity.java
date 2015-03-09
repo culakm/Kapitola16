@@ -2,10 +2,7 @@ package com.hellbilling.kapitola16;
 
 import android.app.ListActivity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -66,6 +63,10 @@ public class MainActivity extends ListActivity {
                 break;
             case 1:
                 intent = new Intent(this, Activity2.class);
+                startActivity(intent);
+                break;
+            case 2:
+                intent = new Intent(this, Activity3.class);
                 startActivity(intent);
                 break;
         }
